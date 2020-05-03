@@ -1,16 +1,21 @@
 import React from 'react';
-import {Switch, Route } from 'react-router-dom';
-import Home from './pages/home'
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Restaurants from './pages/restaurants';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route path="/" component={Home}/>
-        <Route path="/home" component={Home}/>
-      </Switch>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact={true} component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/restaurantes" component={Restaurants} />
+        </Switch>
+      </BrowserRouter>
+
     </div>
   );
 }
