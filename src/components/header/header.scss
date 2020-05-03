@@ -2,4 +2,22 @@
     background-color: #009CA3;
     width: auto;
     height: 62px;
+
+    .navegation{
+
+        .list{
+            margin: 0;
+            list-style: none;
+            display: flex;
+            &__item {
+                margin: 20px 15px 0px 15px;
+                .content{
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+            }
+        }
+
+    }
 }
