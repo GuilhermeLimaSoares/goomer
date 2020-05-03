@@ -9,8 +9,13 @@
             margin: 0;
             list-style: none;
             display: flex;
+            padding: 20px 0px 20px 8px;
             &__item {
-                margin: 20px 15px 0px 15px;
+                margin: 0px 15px 0px 0px;
+
+                @media (min-width: 330px) {
+                    margin: 0px 15px 0px 15px
+                  }
                 .content{
                     text-decoration: none;
                     color: #fff;
